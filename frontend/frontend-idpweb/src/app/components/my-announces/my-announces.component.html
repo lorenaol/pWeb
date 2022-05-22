@@ -1,0 +1,54 @@
+
+<!--**************************************************-->
+<!--**************************************************-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="row">
+
+  <div class="column1">
+
+    <div class="card">
+
+      <div class="announces-button-div">
+        <button class="announces-button" (click)="clickMyAnnounces()">
+          <i class="fa fa-newspaper-o fa-newspaper-o"><a class="announces-title"> ANUNTURILE MELE</a></i>
+        </button>
+      </div>
+
+      <div class="add-announce-button-div">
+        <button class="add-announce-button" (click)="clickAddAnnounce()">
+          <i class="fa fa-plus"><a class="add-announce-title"> ADAUGA ANUNT</a></i>
+        </button>
+      </div>
+
+      <div class="logout-div">
+        <button class="logout" (click)="clickLogout()">
+          <i class="fa fa-sign-out fa-sign-out"><a class="logout-title"> LOG OUT</a></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--**************************************************-->
+  <!--**************************************************-->
+  <div class="column2">
+
+    <button class="view-profile-button" (click)="clickViewProfile()">
+      <i class="fa fa-user fa-user"><a class="view-profile-title"> {{nameUser}}</a></i>
+    </button>
+
+    <ng-container *ngFor="let a of announces">
+      <mat-card class="card-an" [ngStyle]="{'background-color': a.currNr === a.nr? 'rgb(252, 220, 204)' : 'rgb(162, 221, 217)'}">
+        <button class="edit-button" (click)="clickViewAnnounce(a)">
+          <i class="fa fa-arrow-right fa-arrow-right"><a class="title-an">{{a.title}}</a></i>
+        </button>
+
+        <a *ngIf="a.currNr === a.nr"><i class="fa fa-check"></i></a>
+        <p class="no-pers-an">&bull; <a class="curr-nr">{{a.currNr}}</a> /{{a.nr}} locuri
+          <a class="user-name">{{a.user?.name}}</a>
+        </p>
+      </mat-card>
+    </ng-container>
+
+  </div>
+</div>

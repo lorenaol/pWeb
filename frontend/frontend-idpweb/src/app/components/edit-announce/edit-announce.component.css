@@ -1,0 +1,127 @@
+mat-dialog-container {
+  background-color: rgb(162, 221, 217) !important;
+  height: 300px !important;
+}
+
+::ng-deep mat-dialog-container {
+  background-color: rgb(162, 221, 217) !important;
+}
+
+.add-announce-title-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 250px;
+}
+
+.separator {
+  height: 40px;
+}
+
+textarea:focus, input:focus {
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+input, select, textarea{
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+/*****************  input model   *******************/
+.input {
+  height: 50px;
+  width: 320px;
+  margin-top: 30px;
+  border: 0px;
+  border-radius: 15px;
+  margin-left: 40px;
+}
+
+.textarea {
+  height: 200px;
+  width: 400px;
+  margin-top: 30px;
+  border: 0px;
+  border-radius: 15px;
+  resize: none;
+}
+
+.input:focus {
+  outline: none !important;
+  border:1px solid rgba(6, 111, 111, 0.79);
+  box-shadow: 0 0 3px rgba(6, 111, 111, 0.79);
+}
+
+.add-button-div {
+  margin-left: 240px;
+}
+
+.add-button {
+  height: 50px;
+  width: 180px;
+  margin-top: 30px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(6, 111, 111);
+  cursor:pointer;
+}
+
+.add-button:hover {
+  background: rgb(6, 91, 91);
+}
+
+.button-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.floating-label-title {
+  position: absolute;
+  pointer-events: none;
+  left: 460px;
+  top: 120px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.floating-label-noPers {
+  position: absolute;
+  pointer-events: none;
+  left: 460px;
+  top: 202px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.floating-label-description {
+  position: absolute;
+  pointer-events: none;
+  left: 460px;
+  top: 282px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.textarea {
+  height: 200px;
+  width: 400px;
+  margin-top: 30px;
+  border: 0px;
+  border-radius: 15px;
+  resize: none;
+}

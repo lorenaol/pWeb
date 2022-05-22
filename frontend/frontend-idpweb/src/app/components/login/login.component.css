@@ -1,0 +1,156 @@
+.card {
+  height: 380px;
+  width: 380px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+  background: rgb(162, 221, 217);
+  border-radius: 35px;
+
+}
+
+.card-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.card-title-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator {
+  height: 40px;
+}
+
+textarea:focus, input:focus {
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+input, select, textarea{
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+
+
+/*****************  input model   *******************/
+.input {
+  height: 50px;
+  width: 320px;
+  margin-top: 30px;
+  border: 0px;
+  border-radius: 15px;
+}
+
+.floating-label-password {
+  position: absolute;
+  pointer-events: none;
+  left: 60px;
+  top: 190px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.input:focus {
+  outline: none !important;
+  border:1px solid rgba(6, 111, 111, 0.79);
+  box-shadow: 0 0 3px rgba(6, 111, 111, 0.79);
+}
+
+.floating-label-email {
+  position: absolute;
+  pointer-events: none;
+  left: 60px;
+  top: 110px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(32, 164, 164);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+
+.login-button {
+  height: 50px;
+  width: 180px;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(6, 111, 111);
+  cursor:pointer;
+}
+
+.login-button:hover {
+  background: rgb(6, 91, 91);
+}
+
+.login-button-div {
+  margin-left: 100px;
+}
+
+.button-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.register-div {
+  margin-left: 85px;
+  margin-top: 10px;
+}
+
+.register-text {
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.register-button {
+  border: none;
+  background: rgba(157,152,145,0);
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(6, 111, 111);
+  cursor:pointer;
+  font-weight: bold;
+}
+
+.register-button:hover {
+  font-weight: bold;
+}
+
+.view-profile-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(107, 187, 182);
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+  margin-left: 130px;
+}
+
+.view-profile-button:hover {
+  font-size: 25px;
+}
+
+.view-profile-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}

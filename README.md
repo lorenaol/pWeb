@@ -1,7 +1,10 @@
 # Proiect
 
 ## docker-compose
-    Run:
-    ``` . .env
-        docker-compose up
-    ```
+For local deploy:
+
+    # Export envs
+    . .env
+    # Docker up
+    docker-compose up
+    

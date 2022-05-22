@@ -1,0 +1,67 @@
+
+<!--**************************************************-->
+<!--**************************************************-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="row">
+
+  <div class="column1">
+
+    <div class="card">
+
+      <div class="announces-button-div">
+        <button class="announces-button" (click)="clickAnnounces()">
+          <i class="fa fa-newspaper-o fa-newspaper-o"><a class="announces-title"> ANUNTURI</a></i>
+        </button>
+      </div>
+
+      <div class="add-refugee-button-div">
+        <button class="add-refugee-button" (click)="clickAddRefugee()">
+          <i class="fa fa-user-plus" aria-hidden="true"><a class="add-refugee-title"> ADAUGA REFUGIAT</a></i>
+        </button>
+      </div>
+
+      <div class="list-refugee-button-div">
+        <button class="list-refugee-button" (click)="clickListRefugee()">
+          <i class="fa fa-users fa-users"><a class="list-refugee-title"> LISTA REFUGIATI</a></i>
+        </button>
+      </div>
+
+      <div class="saved-connections-button-div">
+        <button class="saved-connections-button" (click)="clickSavedConnections()">
+          <i class="fa fa-home fa-home"><a class="saved-connections-title"> CAZARI SALVATE</a></i>
+        </button>
+      </div>
+
+      <div class="logout-div">
+        <button class="logout" (click)="clickLogout()">
+          <i class="fa fa-sign-out fa-sign-out"><a class="logout-title"> LOG OUT</a></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--**************************************************-->
+  <!--**************************************************-->
+  <div class="column2">
+
+    <button class="view-profile-button" (click)="clickViewProfile()">
+      <i class="fa fa-user fa-user"><a class="view-profile-title"> {{nameUser}}</a></i>
+    </button>
+    <br>
+
+    <a class="title-announces">ANUNTURI NOI</a>
+    <br>
+    <ng-container *ngFor="let a of announces!">
+      <mat-card class="card-an">
+        <button class="edit-button" (click)="clickViewAnnounce(a)">
+          <i class="fa fa-arrow-right fa-arrow-right"><a class="title-an">{{a.title}}</a></i>
+        </button>
+        <p class="no-pers-an">&bull; {{a.nr}} locuri
+          <a class="user-name">{{a.user?.name}}</a>
+        </p>
+      </mat-card>
+    </ng-container>
+
+  </div>
+</div>

@@ -1,0 +1,153 @@
+mat-dialog-container {
+  background-color: rgb(162, 221, 217) !important;
+  height: 300px !important;
+}
+
+::ng-deep mat-dialog-container {
+  background-color: rgb(162, 221, 217) !important;
+}
+
+.edit-button-div {
+  margin-left: 35px;
+}
+
+.edit-button {
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(6, 111, 111);
+  cursor:pointer;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.edit-button.hover {
+  background: rgb(6, 91, 91);
+}
+
+.back-button-div {
+  margin-left: 10px;
+  /*padding-top: 50px;*/
+}
+
+.back-button {
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(6, 111, 111);
+  cursor:pointer;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.back-button.hover {
+  background: rgb(6, 91, 91);
+}
+
+.card-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.card-title-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator {
+  height: 40px;
+}
+
+textarea:focus, input:focus {
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+input, select, textarea{
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+/*****************  input model   *******************/
+.input {
+  height: 50px;
+  width: 320px;
+  margin-top: 30px;
+  border: 0px;
+  border-radius: 15px;
+  margin-left: 18px;
+}
+
+.input:focus {
+  outline: none !important;
+  border:1px solid rgba(6, 111, 111, 0.79);
+  box-shadow: 0 0 3px rgba(6, 111, 111, 0.79);
+}
+
+.floating-label-name {
+  position: absolute;
+  pointer-events: none;
+  left: 610px;
+  top: 190px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.floating-label-nopers {
+  position: absolute;
+  pointer-events: none;
+  left: 610px;
+  top: 273px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.floating-label-phone {
+  position: absolute;
+  pointer-events: none;
+  left: 610px;
+  top: 356px;
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+
+.see-connection-div {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.see-connection {
+  height: 70px;
+  width: 150px;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(238, 164, 127);
+  cursor:pointer;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: rgb(5, 60, 60);
+  font-weight: bold;
+}

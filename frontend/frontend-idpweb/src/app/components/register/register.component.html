@@ -1,0 +1,44 @@
+<mat-card class="card">
+  <div style="text-align:center;">
+    <a class="card-title">SIGN UP</a>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="userName" required>
+    <label class="floating-label-name">nume</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="userEmail" required>
+    <label class="floating-label-email">email</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="userPhone" required>
+    <label class="floating-label-phone">nr. telefon</label>
+  </div>
+
+  <div style="text-align:center;">
+    <select [(ngModel)]="userSex" class="input">
+      <option *ngFor="let s of sex" [value]="s">{{s}}</option>
+    </select>
+    <label class="floating-label-sex">sex</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="password" class="input" [(ngModel)]="userPassword" password required>
+    <label class="floating-label-password">parola</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="password" class="input" [(ngModel)]="userRepeatPassword" password required>
+    <label class="floating-label-repeat-password">repeta parola</label>
+  </div>
+
+  <div class="register-button-div">
+    <button (click)="clickRegister()" class="register-button">
+      <a class="button-text">SIGN UP</a>
+    </button>
+  </div>
+
+</mat-card>

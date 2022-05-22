@@ -1,0 +1,88 @@
+
+<!--**************************************************-->
+<!--**************************************************-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="row">
+
+  <div class="column1">
+
+    <div class="card">
+
+      <div class="announces-button-div">
+        <button class="announces-button" (click)="clickAnnounces()">
+          <i class="fa fa-newspaper-o fa-newspaper-o"><a class="announces-title"> ANUNTURI</a></i>
+        </button>
+      </div>
+
+      <div class="add-refugee-button-div">
+        <button class="add-refugee-button" (click)="clickAddRefugee()">
+          <i class="fa fa-user-plus" aria-hidden="true"><a class="add-refugee-title"> ADAUGA REFUGIAT</a></i>
+        </button>
+      </div>
+
+      <div class="list-refugee-button-div">
+        <button class="list-refugee-button" (click)="clickListRefugee()">
+          <i class="fa fa-users fa-users"><a class="list-refugee-title"> LISTA REFUGIATI</a></i>
+        </button>
+      </div>
+
+      <div class="saved-connections-button-div">
+        <button class="saved-connections-button" (click)="clickSavedConnections()">
+          <i class="fa fa-home fa-home"><a class="saved-connections-title"> CAZARI SALVATE</a></i>
+        </button>
+      </div>
+
+      <div class="logout-div">
+        <button class="logout" (click)="clickLogout()">
+          <i class="fa fa-sign-out fa-sign-out"><a class="logout-title"> LOG OUT</a></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--**************************************************-->
+  <!--**************************************************-->
+  <div class="column2">
+
+    <button class="view-profile-button" (click)="clickViewProfile()">
+      <i class="fa fa-user fa-user"><a class="view-profile-title"> {{nameUser}}</a></i>
+    </button>
+    <br>
+
+    <mat-card class="card-title">
+      <a class="title-title">{{announce?.title}}</a>
+    </mat-card>
+
+    <mat-card class="card-description">
+      <a class="description-text">{{announce?.description}}</a>
+      <br>
+      <br>
+      <br>
+      <a class="user-info">{{announce?.user?.name}}</a>
+      <br>
+      <a class="user-info">{{announce?.user?.phone}}</a>
+      <br>
+      <a class="user-info">{{announce?.user?.email}}</a>
+      <p class="noP">/{{announce?.nr}}</p>
+    </mat-card>
+
+    <mat-card class="card-refugees">
+<!--      <p class="title-refugees">Adauga un refugiat</p>-->
+      <div style="text-align:center;">
+<!--        <select [(ngModel)]="addRefugee" class="input">-->
+<!--          <option *ngFor="let r of refugees" [ngValue]="r">{{r.name}}</option>-->
+<!--        </select>-->
+        <a>{{refugees?.name}}</a>
+      </div>
+    </mat-card>
+
+
+  </div>
+
+  <div class="column3">
+    <button class="associate" (click) ="delete()">
+      <a class="associate-text" >STERGE</a>
+    </button>
+  </div>
+</div>

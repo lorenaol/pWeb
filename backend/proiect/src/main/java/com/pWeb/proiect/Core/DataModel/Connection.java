@@ -8,18 +8,17 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-//@Data
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 
 @Entity
-@Table(name = "connections")
+@Table(name = "my_connections")
 public class Connection {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "connections_seq")
-    @SequenceGenerator(name = "connections_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
@@ -28,7 +27,7 @@ public class Connection {
 
     @ManyToOne
     @JoinColumn(name = "location_id", referencedColumnName = "id", nullable = false)
-    private Location location;
+    private MyLocation location;
 
     public Long getId() {
         return id;
@@ -46,11 +45,11 @@ public class Connection {
         this.refugee = refugee;
     }
 
-    public Location getLocation() {
+    public MyLocation getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(MyLocation location) {
         this.location = location;
     }
 }

@@ -1,0 +1,36 @@
+<!--<div mat-dialog-content class="dialog-div">-->
+<!--  <p>What's your favorite animal?</p>-->
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Favorite Animal</mat-label>-->
+<!--    <input matInput>-->
+<!--  </mat-form-field>-->
+<!--</div>-->
+<div mat-dialog-actions class="dialog-div">
+
+  <p class="add-announce-title-title">MODIFICA ANUNT</p>
+  <br>
+
+  <div class="separator"></div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="location.title" required>
+    <label class="floating-label-title">title</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="location.nr" required>
+    <label class="floating-label-noPers">nr. persoane</label>
+  </div>
+
+  <div style="text-align:center;">
+    <textarea  type="text" class="input" [(ngModel)]="location.description" required></textarea>
+    <label class="floating-label-description">descriere</label>
+  </div>
+
+  <div class="add-button-div">
+    <button (click)="onClick()" class="add-button">
+      <a class="button-text">MODIFICA</a>
+    </button>
+  </div>
+
+</div>

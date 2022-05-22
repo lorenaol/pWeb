@@ -1,0 +1,487 @@
+.card {
+  background: rgb(162, 221, 217);
+  width: 280px;
+  height: 753px;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+.announces-button-div {
+
+  padding-top: 100px;
+}
+
+.announces-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+}
+
+.announces-button:hover {
+  background: rgb(100, 189, 183);
+}
+
+.fa-newspaper-o {
+  margin-left: 0px;
+}
+
+
+.announces-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+
+.add-refugee-button-div {
+  /*padding-top: 25px;*/
+}
+
+.add-refugee-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  cursor:pointer;
+}
+
+.add-refugee-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.add-refugee-button:hover {
+  background: rgb(100, 189, 183);
+}
+
+.list-refugee-button-div {
+
+}
+
+.list-refugee-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+}
+
+.list-refugee-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.list-refugee-button:hover {
+  background: rgb(100, 189, 183);
+}
+
+
+.fa-users {
+  margin-left: -40px;
+}
+
+.saved-connections-button-div {
+
+}
+
+.saved-connections-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+}
+
+.saved-connections-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.saved-connections-button:hover {
+  background: rgb(100, 189, 183);
+}
+
+.fa-home {
+  margin-left: -40px;
+}
+
+.logout-div {
+  padding-top: 200px;
+}
+
+.logout {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+}
+
+.logout-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.logout:hover {
+  background: rgb(100, 189, 183);
+}
+
+.fa-sign-out {
+  margin-left: -130px;
+}
+
+.view-profile-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(107, 187, 182);
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+  margin-left: 942px;
+}
+
+.view-profile-button:hover {
+  font-size: 25px;
+}
+
+.view-profile-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*************/
+/*************/
+.column1 {
+  float: left;
+  /*width: 25%;*/
+  padding: 0 10px;
+}
+
+.column2 {
+  float: left;
+  /*width: 25%;*/
+  height: 300px;
+}
+
+.column3 {
+  float: left;
+}
+
+.row {margin: 0 -10px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*************/
+/*************/
+
+.back-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  background: rgb(6, 111, 111);
+  border: none;
+  height: 50px;
+  width: 130px;
+  border-radius: 30px;
+  cursor:pointer;
+  margin-left: 20px;
+}
+
+.title-back {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background: rgba(6, 111, 111, 0.84);
+}
+
+/*.fa-angle-left {*/
+/*  font-family: "Segoe UISegoe UI", sans-serif;*/
+/*  font-weight: bold;*/
+/*}*/
+
+.card-title {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: rgb(162, 221, 217);
+  border-radius: 25px;
+  width: 500px;
+
+}
+
+.title-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+  color: rgb(6, 111, 111);
+  font-size: 20px;
+}
+
+.card-description {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: rgb(252, 220, 204);
+  border-radius: 25px;
+  width: 500px;
+  height: 300px;
+}
+
+.description-text {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: normal;
+  color: rgb(5, 60, 60);
+  font-size: 18px;
+  padding-bottom: 100px;
+}
+
+.user-info {
+  padding-top: 100px;
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: normal;
+  color: rgb(5, 60, 60);
+  font-size: 18px;
+}
+
+.noP {
+  padding-top: 100px;
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+  color: rgb(5, 60, 60);
+  font-size: 25px;
+  margin-left: 450px;
+}
+
+.card-refugees {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: rgb(6, 111, 111);
+  border-radius: 25px;
+  width: 500px;
+  height: 100px;
+}
+
+.title-refugees {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  margin-left: 130px;
+}
+
+.input {
+  height: 50px;
+  width: 320px;
+  /*margin-top: 30px;*/
+  border: 0px;
+  border-radius: 15px;
+}
+
+.input:focus {
+  outline: none !important;
+  border:1px solid rgba(6, 111, 111, 0.79);
+  box-shadow: 0 0 3px rgba(6, 111, 111, 0.79);
+}
+
+textarea:focus, input:focus {
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(10, 159, 159);
+}
+
+input, select, textarea{
+  font-size: 17px;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(6, 111, 111);
+}
+
+.associate {
+  margin-left: 800px;
+  /*font-family: "Segoe UISegoe UI", sans-serif;*/
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  background: rgb(6, 111, 111);
+  border: none;
+  height: 100px;
+  width: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+}
+
+.associate-text {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.delete-announce {
+  margin-left: 800px;
+  /*font-family: "Segoe UISegoe UI", sans-serif;*/
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  background: rgb(6, 111, 111);
+  border: none;
+  height: 100px;
+  width: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  margin-top: -200px;
+}
+
+.delete-announce:hover {
+  background: rgb(3, 77, 77);
+}
+
+.delete-announce-text {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.edit-announce {
+  margin-left: 800px;
+  /*font-family: "Segoe UISegoe UI", sans-serif;*/
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  background: rgb(6, 111, 111);
+  border: none;
+  height: 100px;
+  width: 200px;
+  border-radius: 30px;
+  cursor:pointer;
+  margin-top: 50px;
+}
+
+.edit-announce:hover {
+  background: rgb(3, 77, 77);
+}
+
+.edit-announce-text {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.associate:hover {
+  background: rgba(6, 111, 111, 0.84);
+}
+
+.announces-button-div {
+
+  padding-top: 100px;
+}
+
+.announces-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+}
+
+.announces-button:hover {
+  background: rgb(100, 189, 183);
+}
+
+.fa-plus {
+  margin-left: -35px;
+}
+
+.announces-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.add-announce-button {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  cursor:pointer;
+  width: 280px;
+}
+
+.add-announce-button:hover {
+  background: rgb(100, 189, 183);
+}
+
+.add-announce-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+  /*padding-left: 100px;*/
+}
+
+
+
+.logout-div {
+  padding-top: 200px;
+}
+.logout {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 24px;
+  color: rgb(6, 111, 111);
+  font-weight: bold;
+  background: rgb(162, 221, 217);
+  border: none;
+  height: 80px;
+  border-radius: 35px;
+  width: 280px;
+  cursor:pointer;
+  margin-top: 180px;
+
+}
+
+.logout-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.logout:hover {
+  background: rgb(100, 189, 183);
+}
+.fa-sign-out {
+  margin-left: -130px;
+}

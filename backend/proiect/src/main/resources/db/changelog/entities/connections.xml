@@ -6,12 +6,12 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
                         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
     <changeSet id="1" author="rachetii">
-        <createSequence sequenceName="connections" startValue="1" incrementBy="1"/>
+        <createSequence sequenceName="my_connections_seq" startValue="1" incrementBy="1"/>
     </changeSet>
 
     <changeSet id="2" author="rachetii">
-        <createTable tableName="connections">
-            <column name="id" type="bigint">
+        <createTable tableName="my_connections">
+            <column name="id" type="bigint"  autoIncrement="1">
                 <constraints primaryKey="true" nullable="false" />
             </column>
 

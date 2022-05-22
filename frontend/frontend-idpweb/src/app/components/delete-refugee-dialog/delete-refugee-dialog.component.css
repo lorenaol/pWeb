@@ -1,0 +1,61 @@
+mat-dialog-container {
+  background-color: rgb(162, 221, 217) !important;
+  height: 300px !important;
+}
+
+::ng-deep mat-dialog-container {
+  background-color: rgb(162, 221, 217) !important;
+}
+
+.card-title {
+  font-family: "Segoe UISegoe UI", sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.back-button-div {
+  margin-left: 10px;
+  /*padding-top: 50px;*/
+}
+
+.back-button {
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(6, 111, 111);
+  cursor:pointer;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.back-button.hover {
+  background: rgb(6, 91, 91);
+}
+
+.edit-button-div {
+  margin-left: 35px;
+}
+
+.edit-button {
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background: rgb(6, 111, 111);
+  cursor:pointer;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.edit-button.hover {
+  background: rgb(6, 91, 91);
+}

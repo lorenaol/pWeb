@@ -1,0 +1,84 @@
+
+<!--**************************************************-->
+<!--**************************************************-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="row">
+
+  <div class="column1">
+
+    <div class="card">
+
+      <div class="announces-button-div">
+        <button class="announces-button" (click)="clickMyAnnounces()">
+          <i class="fa fa-newspaper-o fa-newspaper-o"><a class="announces-title"> ANUNTURILE MELE</a></i>
+        </button>
+      </div>
+
+      <div class="add-announce-button-div">
+        <button class="add-announce-button" (click)="clickAddAnnounce()">
+          <i class="fa fa-plus"><a class="add-announce-title"> ADAUGA ANUNT</a></i>
+        </button>
+      </div>
+
+      <div class="logout-div">
+        <button class="logout" (click)="clickLogout()">
+          <i class="fa fa-sign-out fa-sign-out"><a class="logout-title"> LOG OUT</a></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--**************************************************-->
+  <!--**************************************************-->
+  <div class="column2">
+    <button class="view-profile-button" (click)="clickViewProfile()">
+      <i class="fa fa-user fa-user"><a class="view-profile-title"> {{nameUser}}</a></i>
+    </button>
+    <br>
+
+    <mat-card class="card-edit">
+      <div style="text-align:center;">
+        <a class="card-title">PROFILUL MEU</a>
+      </div>
+
+      <div class="separator"></div>
+
+      <div style="text-align:center;">
+        <input type="text" class="input" [(ngModel)]="userName" required>
+        <label class="floating-label-name">nume</label>
+      </div>
+
+      <div style="text-align:center;">
+        <input type="text" class="input" [(ngModel)]="userPhone" required>
+        <label class="floating-label-phone">nr. telefon</label>
+      </div>
+
+      <div style="text-align:center;">
+        <input type="text" class="input" [(ngModel)]="userEmail" required>
+        <label class="floating-label-email">email</label>
+      </div>
+
+      <div style="text-align:center;">
+        <input type="password" class="input" [(ngModel)]="userNewPassword" required>
+        <label class="floating-label-new-password">parola noua</label>
+      </div>
+
+      <div style="text-align:center;">
+        <input type="password" class="input" [(ngModel)]="userRepeatPassword" required>
+        <label class="floating-label-repeat-password">repeta parola</label>
+      </div>
+
+      <div class="edit-button-div">
+        <button (click)="clickEditProfile()" class="edit-profile-button">
+          <a class="button-text">MODIFICA</a>
+        </button>
+      </div>
+
+    </mat-card>
+
+  </div>
+
+  <div class="column3">
+  </div>
+</div>

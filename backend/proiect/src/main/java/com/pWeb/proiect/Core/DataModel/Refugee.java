@@ -7,18 +7,17 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-//@Data
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 
 @Entity
 @Table(name = "refugees")
 public class Refugee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "refugees_seq")
-    @SequenceGenerator(name = "refugees_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name", nullable = false)
@@ -29,6 +28,9 @@ public class Refugee {
 
     @Column(name = "nr", nullable = false)
     private int nr;
+
+    @Column(name= "accepted")
+    private boolean accepted;
 
     public Long getId() {
         return id;
@@ -60,5 +62,13 @@ public class Refugee {
 
     public void setNr(int nr) {
         this.nr = nr;
+    }
+
+    public boolean isAccepted() {
+        return accepted;
+    }
+
+    public void setAccepted(boolean accepted) {
+        this.accepted = accepted;
     }
 }

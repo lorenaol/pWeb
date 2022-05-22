@@ -1,0 +1,35 @@
+<mat-card class="card">
+  <div style="text-align:center;">
+    <a class="card-title">SIGN IN</a>
+  </div>
+
+  <div class="separator"></div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="userEmail" required>
+    <label class="floating-label-email">email</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="password" class="input" [(ngModel)]="userPassword" required>
+    <label class="floating-label-password">parola</label>
+  </div>
+
+  <div class="login-button-div">
+    <button (click)="clickLogIn()" class="login-button">
+      <a class="button-text">SIGN IN</a>
+    </button>
+  </div>
+
+  <div class="register-div">
+    <a class="register-text">Nu ai cont?</a>
+    <button class="register-button" (click)="clickRegister()">Creeaza-ti unul</button>
+  </div>
+<!--  <button (click)="clickLogOut()" class="login-button">-->
+<!--    <a class="button-text">SIGN OUT</a>-->
+<!--  </button>-->
+<!--  <button (click)="check()" class="login-button">-->
+<!--    <a class="button-text">Check</a>-->
+<!--  </button>-->
+
+</mat-card>

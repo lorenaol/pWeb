@@ -1,0 +1,44 @@
+<!--<div mat-dialog-content class="dialog-div">-->
+<!--  <p>What's your favorite animal?</p>-->
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Favorite Animal</mat-label>-->
+<!--    <input matInput>-->
+<!--  </mat-form-field>-->
+<!--</div>-->
+<div mat-dialog-actions class="dialog-div">
+
+  <div style="text-align:center;">
+    <a class="card-title">{{refugee.name}}</a>
+  </div>
+
+  <div class="separator"></div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="refugee.name" required>
+    <label class="floating-label-name">name</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="refugee.nr" required>
+    <label class="floating-label-nopers">nr. persoane ascoiate</label>
+  </div>
+
+  <div style="text-align:center;">
+    <input type="text" class="input" [(ngModel)]="refugee.phone" required>
+    <label class="floating-label-phone">contact</label>
+  </div>
+
+  <div class="see-connection-div">
+    <button (click)="clickSeeConection(refugee)" class="see-connection">VEZI CAZARE</button>
+  </div>
+
+
+  <div class="back-button-div">
+    <button (click)="onNoClick()" class="back-button">IESI</button>
+  </div>
+
+  <div class="edit-button-div">
+    <button (click)="onClick()" class="edit-button">MODIFICA</button>
+  </div>
+
+</div>
