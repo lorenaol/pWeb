@@ -39,6 +39,7 @@ export class ViewAnnounceComponent implements OnInit {
               public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.nameUser = JSON.parse(localStorage.getItem("user")!).name;
     this.route.queryParams.subscribe(params => {
       // eslint-disable-next-line no-console
       console.log(this.route.snapshot.params['id']);

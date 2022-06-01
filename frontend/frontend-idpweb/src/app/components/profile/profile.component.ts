@@ -10,10 +10,11 @@ import {User} from "../../entities/user";
 })
 export class ProfileComponent implements OnInit {
   nameUser = 'USER';
+  user= new User();
 
-  userName = 'DUTA ANA-MARIA';
-  userPhone = '0734506218';
-  userEmail = 'annamarriad@gmail.com';
+  userName = '';
+  userPhone = '';
+  userEmail = '';
   userNewPassword = '';
   userRepeatPassword = '';
 
@@ -21,6 +22,9 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.nameUser = JSON.parse(localStorage.getItem("user")!).name;
+    this.userService.getUsersByEmail(JSON.parse(localStorage.getItem("user")!).email).subscribe((data:any)=>{
+      this.user = data.body;
+    })
 
   }
 
@@ -40,14 +44,14 @@ export class ProfileComponent implements OnInit {
     localStorage.removeItem("user");
     this.router.navigate(['/']);
   }
-  user = new User();
+
   clickEditProfile(): void {
     this.userService.getUsersByEmail(JSON.parse(localStorage.getItem("user")!).email).subscribe((data:any)=>{
       this.user = data.body;
       if(this.userName != '') {
         this.user.name = this.userName;
       }
-      if(this.userEmail != "") {
+      if(this.userEmail != '') {
         this.user.email = this.userEmail;
       }
       if(this.userPhone != '') {

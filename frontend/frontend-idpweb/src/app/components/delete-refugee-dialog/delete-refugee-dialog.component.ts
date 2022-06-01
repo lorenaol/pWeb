@@ -39,16 +39,18 @@ export class DeleteRefugeeDialogComponent implements OnInit {
       if(res.body!.location?.currNr){
       res.body!.location.currNr = res.body!.location.currNr - res.body!.refugee?.nr!;
       //update location
-        }
+        } else {
+        this.refugeeService.deleteRefugee(this.refugee).subscribe(()=>{this.dialogRef.close();})
+      }
       this.connectionService.deleteConnection(res.body!).subscribe(res1=>{
         this.refugeeService.deleteRefugee(this.refugee).subscribe(res2=>{
-          this.locationService.find(res.body!.location!.id!).subscribe(data=>
-          {
-            this.locationService.updateLocation(data.body).subscribe(data2=>{
+          // this.locationService.find(res.body!.location!.id!).subscribe(data=>
+          // {
+            this.locationService.updateLocation(res.body?.location!).subscribe(data2=>{
               this.dialogRef.close();
             })
 
-          })
+          // })
 
         });
       })

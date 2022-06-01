@@ -3,90 +3,40 @@ services:
   frontend:
     image: frontend
     build: ./frontend/frontend-idpweb
-    logging:
-      driver: loki
-      options:
-        loki-url: http://host.docker.internal:3100/loki/api/v1/push
-        loki-external-labels: job=myjob,owner=frontend,environment=development
     ports:
-      - 9095:80
-    networks:
-      - frontend
-      - logging
+      - 9095:9095
 
   backend:
     image: backend
     build: ./backend
     depends_on:
       - mysql
-    logging:
-      driver: loki
-      options:
-        loki-url: http://host.docker.internal:3100/loki/api/v1/push
-        loki-external-labels: job=myjob,owner=backend,environment=development
     environment:
       MYSQL_HOST: mysql
       MYSQL_DATABASE: db
       MYSQL_USER: user
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_PASSWORD: pass
       MYSQL_PORT: 3306
     entrypoint: ["java","-jar","./app.jar", ]
     ports:
       - 8082:8082
-    networks:
-      - backend
-      - logging
 
   mysql:
     image: mysql:8-oracle
     restart: always
     ports:
       - 3306:3306
-    environment: 
+    environment:
       MYSQL_DATABASE: db
       MYSQL_USER: user
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-    volumes:
-      - mysql-data:/var/lib/mysql
-    networks: 
-      - backend
-
-  loki:
-    image: grafana/loki
-    volumes:
-      - ./infrastructure/logging/configs/loki/loki.yml:/etc/config/loki.yml
-      - ./infrastructure/logging/configs/loki/wal:/wal
-    entrypoint:
-      - /usr/bin/loki
-      - -config.file=/etc/config/loki.yml
-    ports:
-      - 3100:3100
-    networks:
-      - logging
-      - visualizing
-
-  grafana:
-    image: grafana/grafana
-    volumes:
-      - grafana-volume:/var/lib/grafana
-    ports:
-      - 3000:3000
-    depends_on:
-       - loki
+      MYSQL_PASSWORD: pass
+      MYSQL_ROOT_PASSWORD: pass
     deploy:
       placement:
         constraints: [node.role == manager]
-    networks:
-      - visualizing
-
+      replicas: 1
+    volumes:
+      - mysql-data:/var/lib/mysql
 
 volumes:
   mysql-data:
-  grafana-volume:
-
-networks:
-  frontend:
-  backend:
-  logging:
-  visualizing:

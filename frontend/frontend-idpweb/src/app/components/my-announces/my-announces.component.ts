@@ -53,7 +53,8 @@ export class MyAnnouncesComponent implements OnInit {
   }
 
   clickLogout(): void {
-
+    localStorage.removeItem("user");
+    this.router.navigate(['/']);
   }
 
   clickViewProfile(): void {

@@ -44,7 +44,7 @@
   <!--**************************************************-->
   <!--**************************************************-->
   <div class="column2">
-    <button class="view-profile-button" (click)="clickViewProfile()">
+    <button class="view-profile-button" >
       <i class="fa fa-user fa-user"><a class="view-profile-title"> {{nameUser}}</a></i>
     </button>
     <br>
@@ -53,7 +53,7 @@
     <br>
     <ng-container *ngFor="let a of announces">
       <mat-card class="card-an">
-        <button class="edit-button" (click)="clickViewAnnounce()">
+        <button class="edit-button" (click)="clickViewAnnounce(a)">
           <i class="fa fa-arrow-right fa-arrow-right"><a class="title-an">{{a.location?.title}}</a></i>
         </button>
         <p class="no-pers-an">&bull; {{a.location?.nr}} locuri

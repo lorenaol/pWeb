@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {Connection} from "../../entities/connection";
+import {Location} from "../../entities/location";
 import {ConnectionService} from "../../services/connection.service";
 
 @Component({
@@ -55,7 +56,7 @@ export class SavedConnectionsComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  clickViewAnnounce(): void {
-    this.router.navigate(['/view-announce']);
+  clickViewAnnounce(a : Location): void {
+    this.router.navigate(['/view-connection/' + a?.id]);
   }
 }
